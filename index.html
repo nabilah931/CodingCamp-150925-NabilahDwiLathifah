@@ -34,18 +34,23 @@
                 <h2 class="text-2xl font-bold">Your Todos:</h2>
             </header>
 
+            <button type ="button" onclick="filterTodos()" class="bg-yellow-500 text-white rounded p-2 mt-3">Filter</button>
+
             <ul class="mt-4" id="todo-list">
                 <li class="border-b border-gray-300 py-2">Sample Todo 1 - <span 
                     class="text-sm text-gray-500">2025-12-31</span></li>
+                <button type ="button" onclick="deleteTodo()" class="bg-red-500 text-white rounded p-1 ml-2 ">Delete</button>
                 <li class="border-b border-gray-300 py-2">Sample Todo 2 - <span 
                     class="text-sm text-gray-500">2025-12-31</span></li>
+                <button type ="button" onclick="deleteTodo()" class="bg-red-500 text-white rounded p-1 ml-2">Delete</button>
             </ul>
         </section>
+        <button type ="button" onclick="deleteAllTodos()" class="bg-red-500 text-white rounded p-2 mt-2 w-full">Delete All Todos</button>
     </main>
 
     <!-- Footer Section -->
     <footer>
-        <p>2025 "N" Website</p>
+        <p class="p-2">2025 "N" Website</p>
     </footer>
 
     <!-- JS External -->
